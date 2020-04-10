@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
@@ -16,11 +17,12 @@ import { appRoutingModule } from './app-routing.module';
     FooterComponent,
     PortafolioComponent,
     AboutComponent,
-    ItemComponent
+    ItemComponent,
   ],
   imports: [
     BrowserModule,
-    appRoutingModule
+    appRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

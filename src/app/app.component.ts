@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataloadService } from './service/dataload.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-app';
+  //title = 'angular-app';
+  constructor (public DataloadService: DataloadService){}
 }
