@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataloadService } from '../../service/dataload.service';
 
 @Component({
   selector: 'app-about',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  constructor(public _load: DataloadService) {}
 
   ngOnInit(): void {
   }
