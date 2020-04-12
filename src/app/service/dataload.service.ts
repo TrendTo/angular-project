@@ -26,7 +26,7 @@ export class DataloadService {
     this.http.get("https://angulartest-95516.firebaseio.com/equipo.json")
       .subscribe((resp: any[])  => {
         this.equipo = resp;
-        console.log(resp);
+        //console.log(resp);
       });
   }
 }

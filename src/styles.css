@@ -37,3 +37,8 @@
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
   }
+
+svg path,
+svg rect{
+  fill: black;
+}
